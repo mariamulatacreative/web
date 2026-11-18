@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>María Mulata · Arquitectura y Construcción</title>
+<meta name="description" content="Diseñamos y construimos casas y espacios con esencia, desde la Sabana de Bogotá. Diseño · Hábitat · Origen.">
+<meta property="og:title" content="María Mulata · Arquitectura y Construcción">
+<meta property="og:description" content="Diseñamos y construimos casas y espacios con esencia, desde la Sabana de Bogotá.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="img/logo-naranja.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#282828;--olive:#6E6E5F;--orange:#FF5A00;--paper:#F2F1EC;--pad:clamp(20px,5.5vw,80px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter Tight','Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}a:hover{color:var(--orange)}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.label{margin:0;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive)}
+h1,h2,h3{font-weight:400;letter-spacing:-.02em;margin:0}
+h2{font-size:clamp(32px,4vw,56px);line-height:1.08}
+p{line-height:1.55}
+section{padding-top:clamp(72px,10vw,150px)}
+.rule{border-top:1px solid var(--ink)}
+
+/* hero */
+header{position:relative;height:min(92vh,860px);min-height:560px;overflow:hidden;background:var(--ink)}
+header>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+header .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,15,.62) 0%,rgba(20,18,15,.08) 30%,rgba(20,18,15,.12) 55%,rgba(20,18,15,.78) 100%)}
+nav{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding-top:32px;padding-bottom:32px}
+nav .links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 32px;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+nav .links a{color:#fff;text-decoration:none;padding:12px 0}
+nav .links a.cta{color:var(--ink);background:var(--orange);padding:13px 22px;font-weight:500}
+.hero-text{position:absolute;left:0;right:0;bottom:0}
+.hero-text .wrap{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;padding-bottom:72px}
+.hero-text h1{color:#fff;font-size:clamp(44px,7.4vw,108px);line-height:.96;letter-spacing:-.025em;max-width:860px}
+.hero-text p{color:#fff;font-size:18px;max-width:360px;margin:0 0 10px}
+
+/* manifesto */
+.manifesto{display:flex;flex-wrap:wrap;gap:32px 80px}
+.manifesto .label{flex:1 1 180px;margin-top:8px}
+.manifesto .big{margin:0;flex:999 1 560px;min-width:0;font-size:clamp(28px,3.6vw,52px);line-height:1.14;letter-spacing:-.02em}
+
+/* projects */
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 32px;padding:20px 0 56px}
+.meta{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 32px;padding:20px 0 0}
+.meta h3{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.015em}
+.meta h3 span{color:var(--olive);font-size:14px;letter-spacing:.08em;margin-right:18px}
+.meta p{margin:0;font-size:16px;color:var(--olive)}
+.desc{margin:12px 0 0;font-size:17px;max-width:640px}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 0 8px;-webkit-overflow-scrolling:touch}
+.strip img{flex:none;height:clamp(220px,32vw,420px);width:auto;scroll-snap-align:start;object-fit:cover}
+.project{margin-bottom:110px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:80px 32px}
+.grid2 img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.grid2 .meta h3{font-size:26px}
+
+/* split */
+.split{display:flex;flex-wrap:wrap;gap:48px 96px;align-items:center;padding-top:72px}
+.split>div{flex:1 1 380px;min-width:0}
+.split>img{flex:1 1 320px;min-width:0;max-width:520px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.split p{font-size:18px;max-width:520px}
+
+/* process */
+.dark{background:var(--ink);color:#fff;margin-top:clamp(72px,10vw,150px)}
+.dark .wrap{padding-top:clamp(72px,10vw,150px);padding-bottom:clamp(72px,10vw,150px)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:56px 32px;margin-top:72px}
+.steps img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.steps .n{margin:22px 0 8px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.steps p{margin:0;font-size:17px;color:#E4E3DC}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:40px 32px;margin-top:clamp(72px,9vw,130px)}
+.services div{border-top:1px solid var(--ink);padding-top:18px}
+.services .n{margin:0 0 40px;font-size:14px;letter-spacing:.08em;color:var(--olive)}
+.services h3{font-size:24px;margin-bottom:10px}
+.services p{margin:0;font-size:16px;color:#55554A}
+
+/* contact */
+.contact{background:var(--orange);margin-top:clamp(72px,10vw,150px)}
+.contact .wrap{padding-top:clamp(72px,9vw,130px);padding-bottom:clamp(72px,9vw,130px)}
+.contact h2{font-size:clamp(40px,7vw,104px);line-height:.98;letter-spacing:-.025em;max-width:980px;margin:28px 0 56px}
+.btns{display:flex;flex-wrap:wrap;gap:16px 20px}
+.btns a{display:inline-block;text-decoration:none;padding:17px 28px;font-size:17px;border:1px solid var(--ink);overflow-wrap:anywhere}
+.btns a.solid{background:var(--ink);color:#fff}
+.btns a:hover{color:inherit;opacity:.85}.btns a.solid:hover{color:#fff}
+footer{background:var(--ink);color:#E4E3DC}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px;padding-top:44px;padding-bottom:44px}
+footer p{margin:0;font-size:15px}
+.wa{position:fixed;right:20px;bottom:20px;z-index:10;background:var(--ink);color:#fff;text-decoration:none;padding:14px 20px;font-size:15px;letter-spacing:.02em;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.wa:hover{color:var(--orange)}
+</style>
+</head>
+<body>
+
+<header id="inicio">
+<img src="img/hero.jpg" alt="Sala de Casa La Promesa con chimenea central al atardecer">
+<div class="shade" aria-hidden="true"></div>
+<nav class="wrap" aria-label="Principal">
+<a href="#inicio"><img src="img/logo-blanco.png" alt="María Mulata — creative architectural studio" style="height:38px;width:auto"></a>
+<div class="links">
+<a href="#proyectos">Proyectos</a>
+<a href="#modular">Modular</a>
+<a href="#proceso">Proceso</a>
+<a href="#estudio">Estudio</a>
+<a class="cta" href="#contacto">Hablemos ↗</a>
+</div>
+</nav>
+<div class="hero-text">
+<div class="wrap">
+<h1>La naturaleza<br>se habita.</h1>
+<p>Diseñamos y construimos casas y espacios con esencia, desde la Sabana de Bogotá.</p>
+</div>
+</div>
+</header>
+
+<main>
+<section class="wrap manifesto">
+<p class="label">Diseño · Hábitat · Origen</p>
+<p class="big">Diseñamos cada casa desde el lugar y desde quien la va a vivir: la luz de la tarde, el árbol que ya estaba, la vista que hay que dejar entrar.</p>
+</section>
+
+<section id="proyectos" class="wrap">
+<div class="rule sec-head"><h2>Proyectos</h2><p class="label">Selección · 04</p></div>
+
+<article class="project">
+<img src="img/promesa-sala.jpg" alt="Interior de Casa La Promesa: estructura de madera, piso en ladrillo y chimenea suspendida" style="width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 62%">
+<div class="meta"><h3><span>01</span>Casa La Promesa</h3><p>Vivienda · Guasca · Próxima obra</p></div>
+<p class="desc">Muros de tierra apisonada, cubierta de madera a la vista, piso en ladrillo y una chimenea al centro que ordena la sala, el comedor y la terraza hacia el bosque. Es nuestra próxima obra: estamos contando su diseño paso a paso en Instagram.</p>
+<div class="strip" aria-label="Galería Casa La Promesa">
+<img src="img/promesa-exterior.jpg" alt="Exterior de Casa La Promesa sobre la ladera" loading="lazy">
+<img src="img/promesa-chimenea.jpg" alt="Sala con chimenea y sofá de cuero" loading="lazy">
+<img src="img/promesa-estar.jpg" alt="Estar con vista al bosque" loading="lazy">
+<img src="img/promesa-vestier.jpg" alt="Vestier en madera bajo la cubierta" loading="lazy">
+</div>
+</article>
+
+<div class="grid2">
+<article>
+<img src="img/mm-comedor.jpg" alt="Comedor abierto con pérgola de madera y vegetación tropical" loading="lazy">
+<div class="meta"><h3><span>02</span>Casa M+M</h3><p>Diseño · Vivienda · Minca</p></div>
+<p class="desc">Sala, cocina y habitación alrededor del agua. Pérgolas de madera que filtran el sol y un jardín tropical contra el muro de piedra.</p>
+<div class="strip"><img src="img/mm-habitacion.jpg" alt="Habitación abierta a la piscina" loading="lazy" style="height:180px"><img src="img/mm-corredor.jpg" alt="Corredor con ventanal hacia el jardín" loading="lazy" style="height:180px"></div>
+</article>
+<article>
+<img src="img/ms-fachada.jpg" alt="Fachada de Casa M+S en concreto con celosías de madera" loading="lazy" style="object-position:center 38%">
+<div class="meta"><h3><span>03</span>Casa M+S</h3><p>Diseño · Vivienda · Tabio</p></div>
+<p class="desc">Tres pisos en un lote entre medianeras. Concreto, piedra y postigos de madera que se abren o se cierran según la hora.</p>
+</article>
+<article>
+<img src="img/torre.jpg" alt="Torre de avistamiento de aves en madera dentro del bosque de niebla" loading="lazy" style="object-position:center 30%">
+<div class="meta"><h3><span>04</span>Torre de aves</h3><p>Diseño · Mirador</p></div>
+<p class="desc">Tres cajas de madera giradas sobre pilotes, a la altura de las copas. Un lugar para quedarse quieto y mirar.</p>
+</article>
+</div>
+</section>
+
+<section id="modular" class="wrap">
+<div class="rule split">
+<div>
+<p class="label" style="margin-bottom:24px">Construcción modular</p>
+<h2 style="margin-bottom:28px">No es pequeño, es optimizado.</h2>
+<p>Un módulo lo diseñamos con el mismo cuidado que una casa. Cada centímetro tiene una función, y la luz y la vista son protagonistas.</p>
+<p>Por ser modular, tu espacio está listo antes, llega a lotes difíciles y sabes desde el principio cuál es la inversión. El lujo no está en materiales caros: está en un espacio bien pensado.</p>
+<p class="label" style="text-transform:none;letter-spacing:0;font-size:16px;margin-top:28px">Módulo Camino a la Montaña · Oficina y consultorio canino · 14 m² · Cajicá</p>
+</div>
+<img src="img/modulo.jpg" alt="Módulo negro con fachada de vidrio en un bosque de eucaliptos en Cajicá" loading="lazy">
+</div>
+</section>
+</main>
+
+<section id="proceso" class="dark" style="padding-top:0">
+<div class="wrap">
+<div class="manifesto"><p class="label" style="color:#B9B9AB">Proceso</p><h2 style="flex:999 1 560px">Así diseñamos y construimos una casa.</h2></div>
+<div class="steps">
+<div><img src="img/torre-boceto.jpg" alt="Boceto a mano de la torre de aves" loading="lazy"><p class="n">01 — Idea</p><p>Visitamos el lote, escuchamos cómo quieres vivir y dibujamos a mano. La idea tiene que caber en una hoja.</p></div>
+<div><img src="img/promesa-3d.jpg" alt="Modelo 3D de Casa La Promesa sobre la ladera" loading="lazy" style="object-position:30% center"><p class="n">02 — Diseño</p><p>Resolvemos la casa completa en 3D: espacios, medidas, materiales y luz.</p></div>
+<div><img src="img/promesa-exterior.jpg" alt="Imagen final de Casa La Promesa" loading="lazy" style="object-position:30% center"><p class="n">03 — Proyecto y obra</p><p>El diseño definitivo, con sus planos e imágenes. Y luego lo construimos, cuidando cada detalle hasta la entrega.</p></div>
+</div>
+</div>
+</section>
+
+<section class="wrap">
+<div class="split" style="padding-top:0;align-items:flex-end">
+<div><h2>Un diseño que se puede recorrer.</h2></div>
+<div><p>Usamos renders y realidad virtual como herramientas de diseño. Caminas los espacios, opinas a tiempo y llegas a la obra sin sorpresas.</p></div>
+</div>
+<figure style="margin:56px 0 0">
+<img src="img/vr-360.jpg" alt="Panorámica 360° de sala y cocina de un proyecto" loading="lazy" style="width:100%;aspect-ratio:21/9;object-fit:cover">
+<figcaption class="label" style="padding-top:14px">Panorámica 360° · sala y cocina</figcaption>
+</figure>
+</section>
+
+<section id="estudio" class="wrap">
+<div class="rule split">
+<img src="img/mm-corredor.jpg" alt="Corredor con ventanal hacia un jardín interior" loading="lazy">
+<div>
+<img src="img/logo-negro.png" alt="" aria-hidden="true" style="height:40px;width:auto;margin-bottom:36px">
+<h2 style="margin-bottom:28px">Por qué María Mulata.</h2>
+<p>La maría mulata es un ave del Caribe colombiano: negra, brillante, de las que se adaptan a cualquier lugar y lo hacen suyo. De ahí viene el nombre del estudio y la manera de trabajar.</p>
+<p>Dirige el estudio el arquitecto Panta Farelo. Trabajamos desde la Sabana de Bogotá, con proyectos en todo el país.</p>
+<a href="#contacto" style="display:inline-block;margin-top:16px;padding:14px 0;font-size:16px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--ink)">Cuéntanos tu proyecto ↗</a>
+</div>
+</div>
+<div class="services">
+<div><p class="n">01</p><h3>Diseño de casas</h3><p>Nuestro fuerte. Casas a la medida, del primer boceto a los planos de obra.</p></div>
+<div><p class="n">02</p><h3>Diseño comercial</h3><p>Locales, oficinas y espacios de marca con el mismo cuidado que una casa.</p></div>
+<div><p class="n">03</p><h3>Construcción</h3><p>Construimos lo que diseñamos: coordinamos equipos y contratistas y cuidamos cada detalle hasta la entrega.</p></div>
+<div><p class="n">04</p><h3>Construcción modular</h3><p>Módulos para vivir, trabajar o rentar, con la misma esencia que una casa.</p></div>
+<div><p class="n">05</p><h3>Visualización y VR</h3><p>Renders y recorridos virtuales, como apoyo del diseño.</p></div>
+</div>
+</section>
+
+<section id="contacto" class="contact" style="padding-top:0">
+<div class="wrap">
+<p class="label" style="color:var(--ink)">Contacto</p>
+<h2>¿Tienes un lote o una idea? Hablemos.</h2>
+<div class="btns">
+<a class="solid" href="https://wa.me/573147143981?text=LOTE">Escríbenos LOTE por WhatsApp ↗</a>
+<a href="mailto:contacto@mariamulatacreative.com">contacto@mariamulatacreative.com</a>
+<a href="https://www.instagram.com/mariamulatacreative">Instagram @mariamulatacreative</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<img src="img/logo-blanco.png" alt="María Mulata — creative architectural studio" style="height:32px;width:auto">
+<p>Sabana de Bogotá · Colombia</p>
+<p style="color:#B9B9AB">© 2026 María Mulata S.A.S.</p>
+</div>
+</footer>
+
+<a class="wa" href="https://wa.me/573147143981?text=LOTE">WhatsApp ↗</a>
+</body>
+</html>
