@@ -95,6 +95,7 @@ footer p{margin:0;font-size:15px}
 .wa:hover{color:var(--orange)}
 .arr{display:inline-block;width:.85em;height:.85em;margin-left:.35em;vertical-align:-.05em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:miter;stroke-linecap:butt}
 </style>
+<link rel="stylesheet" href="lib/pannellum.css">
 </head>
 <body>
 
@@ -191,8 +192,8 @@ footer p{margin:0;font-size:15px}
 <div><p>Usamos renders y realidad virtual como herramientas de diseño. Caminas los espacios, opinas a tiempo y llegas a la obra sin sorpresas.</p></div>
 </div>
 <figure style="margin:56px 0 0">
-<img src="img/vr-360.jpg" alt="Panorámica 360° de sala y cocina de un proyecto" loading="lazy" style="width:100%;aspect-ratio:21/9;object-fit:cover">
-<figcaption class="label" style="padding-top:14px">Panorámica 360° · sala y cocina</figcaption>
+<div id="pano" style="width:100%;aspect-ratio:21/9;min-height:320px;background:var(--ink)" role="img" aria-label="Recorrido 360° interactivo de sala y cocina"></div>
+<figcaption class="label" style="padding-top:14px">Recorrido 360° · sala y cocina · arrastra para mirar alrededor</figcaption>
 </figure>
 </section>
 
@@ -237,5 +238,9 @@ footer p{margin:0;font-size:15px}
 </footer>
 
 <a class="wa" href="https://wa.me/573147143981?text=LOTE">WhatsApp <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20L20 4M7 4H20V17"/></svg></a>
+<script src="lib/pannellum.js"></script>
+<script>
+pannellum.viewer('pano',{type:'equirectangular',panorama:'img/360-sala-cocina.jpg',autoLoad:true,autoRotate:-2,showZoomCtrl:false,compass:false,hfov:105,mouseZoom:false,strings:{loadingLabel:'Cargando…'}});
+</script>
 </body>
 </html>
